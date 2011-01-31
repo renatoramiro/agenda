@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nome_completo: MyString
+  telefone: MyString
+  celular: MyString
+  grupo: MyString
+  aniversario: 2011-01-20
+
+two:
+  nome_completo: MyString
+  telefone: MyString
+  celular: MyString
+  grupo: MyString
+  aniversario: 2011-01-20

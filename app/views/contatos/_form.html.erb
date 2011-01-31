@@ -1,0 +1,41 @@
+<%= form_for(@contato, :html => {:multipart => true}) do |f| %>
+  <% if @contato.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contato.errors.count, "error") %> prohibited this contato from being saved:</h2>
+
+      <ul>
+      <% @contato.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome_completo %><br />
+    <%= f.text_field :nome_completo %>
+  </div>
+  <div class="field">
+    <%= f.label :telefone %><br />
+    <%= f.text_field :telefone %>
+  </div>
+  <div class="field">
+    <%= f.label :celular %><br />
+    <%= f.text_field :celular %>
+  </div>
+  <div class="field">
+    <%= f.label :grupo %><br />
+    <%= f.text_field :grupo %>
+  </div>
+  <div class="field">
+    <%= f.label :aniversario %><br />
+    <%= f.date_select :aniversario %>
+  </div>
+  <div class="field">
+    <%= f.file_field :avatar %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

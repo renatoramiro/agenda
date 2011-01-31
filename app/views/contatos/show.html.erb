@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <b>Avatar:</b><br />
+  <%= image_tag @contato.avatar.url(:thumb) %><br />
+  <%= link_to "Download Arquivo", @contato.avatar.url %>
+</p>
+<p>
+  <b>Nome completo:</b>
+  <%= @contato.nome_completo %>
+</p>
+
+<p>
+  <b>Telefone:</b>
+  <%= @contato.telefone %>
+</p>
+
+<p>
+  <b>Celular:</b>
+  <%= @contato.celular %>
+</p>
+
+<p>
+  <b>Grupo:</b>
+  <%= @contato.grupo %>
+</p>
+
+<p>
+  <b>Aniversario:</b>
+  <%= @contato.aniversario %>
+</p>
+
+
+<%= link_to 'Edit', edit_contato_path(@contato) %> |
+<%= link_to 'Back', contatos_path %>
